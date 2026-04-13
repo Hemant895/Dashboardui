@@ -1,0 +1,21 @@
+<app-dashboard-layout>
+  <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-6 h-full pb-4">
+    
+    <app-base-card [title]="'Theoretischer Unterricht'">
+      <app-theory-lessons></app-theory-lessons>
+    </app-base-card>
+
+    <app-base-card [title]="'Fahrstunden'">
+      <app-driving-lessons></app-driving-lessons>
+    </app-base-card>
+
+    <app-base-card [title]="'Kalender'">
+      <app-calendar></app-calendar>
+    </app-base-card>
+
+    <app-base-card [title]="'Mein Fortschritt'">
+      <app-progress></app-progress>
+    </app-base-card>
+
+  </div>
+</app-dashboard-layout>

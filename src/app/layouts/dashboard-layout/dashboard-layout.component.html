@@ -1,0 +1,25 @@
+<div class="flex min-h-screen bg-[#f3f6f9] p-6 pb-2 font-sans font-medium">
+  
+  <!-- Exactly 372px wide sidebar as per Figma -->
+  <div class="w-[372px] shrink-0 mr-8 flex flex-col relative z-20">
+    <div class="bg-[#ebf4fa] rounded-[28px] overflow-visible flex-1 shadow-sm border border-[#e2eefa] relative">
+      <app-sidebar></app-sidebar>
+    </div>
+  </div>
+
+  <div class="flex-1 flex flex-col min-w-0 relative z-10">
+    <!-- Exactly 148px high header with 28px border radius as per Figma -->
+    <div class="bg-white rounded-[28px] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.04)] border border-[#e8f1fa] mb-8 h-[148px] shrink-0 relative flex items-center">
+      <app-header class="w-full h-full"></app-header>
+    </div>
+
+    <main class="flex-1">
+      <ng-content></ng-content>
+    </main>
+
+    <!-- Transparent subtle footer -->
+    <footer class="pt-4 pb-2 text-center text-[13px] font-semibold text-gray-500 mt-2">
+      &copy; 2025 DriveHero V.1.0.0 Alle Rechte vorbehalten.
+    </footer>
+  </div>
+</div>

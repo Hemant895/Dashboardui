@@ -1,0 +1,65 @@
+<div class="flex flex-col h-full justify-between">
+  
+  <div class="flex items-center flex-1 mb-10 h-32 mt-4 ml-6">
+    <div class="relative w-36 h-36 mr-10 flex-shrink-0">
+      <svg viewBox="0 0 36 36" class="w-full h-full">
+        <defs>
+          <linearGradient id="donutGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0066ff" />
+            <stop offset="100%" stop-color="#38bdf8" />
+          </linearGradient>
+        </defs>
+        <path class="text-[#f0f6fc]" stroke-width="4" stroke="currentColor" fill="none"
+          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <path stroke="url(#donutGradient)" stroke-width="4" stroke-dasharray="55, 100" stroke-linecap="round" fill="none"
+          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+      </svg>
+      <div class="absolute inset-0 flex flex-col items-center justify-center">
+        <span class="text-[26px] font-bold text-gray-800">55%</span>
+        <span class="text-[12px] text-gray-600 font-medium tracking-wide">Fertig</span>
+      </div>
+    </div>
+
+    <div class="flex-1 space-y-8 w-full mr-4">
+      <div>
+        <div class="flex justify-between text-[11px] text-gray-500 font-medium mb-2.5">
+          <span>Theoriestunden</span>
+          <span class="text-[#38bdf8] font-bold text-sm">10/14</span>
+        </div>
+        <div class="w-full bg-[#f0f6fc] rounded-full h-3">
+          <div class="h-3 rounded-full bg-gradient-to-r from-[#0066ff] to-[#38bdf8]" style="width: 71%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between text-[11px] text-gray-500 font-medium mb-2.5">
+          <span>Fahrstunden</span>
+          <span class="text-[#38bdf8] font-bold text-sm">08/20</span>
+        </div>
+        <div class="w-full bg-[#f0f6fc] rounded-full h-3">
+          <div class="h-3 rounded-full bg-gradient-to-r from-[#0066ff] to-[#38bdf8]" style="width: 40%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-between gap-4 mb-6">
+    <div class="bg-[#f6fafe] border border-[#e8f2fc] rounded-xl p-4 flex-1 shadow-sm">
+      <div class="text-[32px] font-bold text-[#38bdf8] mb-1 leading-none tracking-tight">4</div>
+      <div class="text-[11px] text-gray-600 font-medium">Verbleibende Theoriestunden</div>
+    </div>
+    <div class="bg-[#f6fafe] border border-[#e8f2fc] rounded-xl p-4 flex-1 shadow-sm">
+      <div class="text-[32px] font-bold text-[#38bdf8] mb-1 leading-none tracking-tight">12</div>
+      <div class="text-[11px] text-gray-600 font-medium">Verbleibende Fahrstunden</div>
+    </div>
+    <div class="bg-[#f6fafe] border border-[#e8f2fc] rounded-xl p-4 flex-1 shadow-sm">
+      <div class="text-[32px] font-bold text-[#38bdf8] mb-1 leading-none tracking-tight">16</div>
+      <div class="text-[11px] text-gray-600 font-medium">Gesamt verbleibend</div>
+    </div>
+  </div>
+
+  <div class="flex justify-end mt-4">
+    <button class="bg-[#dcecfe] hover:bg-[#c6e1ff] text-[#0066ff] font-bold py-2.5 px-6 rounded-full text-[13px] transition-colors cursor-pointer border-none shadow-sm">
+      Vollständigen Bericht anzeigen
+    </button>
+  </div>
+</div>

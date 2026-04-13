@@ -1,0 +1,12 @@
+<div class="bg-white rounded-[1.5rem] shadow-sm border border-[#e8f1fa] flex flex-col h-full w-full overflow-hidden">
+  <div class="bg-[#f5faff] border-b border-[#edf4fb] px-6 py-4 flex items-center">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="mr-3">
+      <path d="M7 6L12 12L7 18" stroke="#d5eeff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 6L18 12L13 18" stroke="#7ec8fc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h3 class="text-[20px] font-bold text-gray-800">{{ title }}</h3>
+  </div>
+  <div class="flex-1 p-6 flex flex-col">
+    <ng-content></ng-content>
+  </div>
+</div>
